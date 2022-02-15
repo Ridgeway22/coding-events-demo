@@ -19,15 +19,15 @@ import java.util.List;
 public class EventController {
 
     //private static List<String> events = new ArrayList<>();
-    private static HashMap<String,String> events= new HashMap<>();
+    private static HashMap<String,String> events = new HashMap<>();
 
     @GetMapping
     public String displayAllEvents(Model model) {
         model.addAttribute("title", "All Events");
         model.addAttribute("events", events);
-        events.put("VegFest", "Vegan food day");
-        events.put("Groove Fest", "Live Music");
-        events.put("Taste of Soulard", "Food from restaurants and pubs.");
+        events.put("VegFest  ", "Vegan food day");
+        events.put("Groove Fest  ", "Live Music");
+        events.put("Taste of Soulard  ", "Food from restaurants and pubs.");
 
         return "events/index";
     }
