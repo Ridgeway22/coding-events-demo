@@ -3,9 +3,7 @@ package org.launchcode.codingevents.models;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 /**
  * Created by LaunchCode
@@ -15,6 +13,7 @@ public class User extends AbstractEntity {
 
     @NotNull
     private String username;
+
 
     @NotNull
     private String pwHash;
